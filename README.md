@@ -81,4 +81,5 @@ NSObject 的子类在实现它们自己的 isEqual: 方法时，应该完成下�
 ## copy、strong in property
 
 strong对应的`setter`方法，是将_property先release（_property release），然后将参数`retain`（property retain），最后是_property = property。
+
 copy对应的`setter`方法，是将_property先release（_property release），然后拷贝参数内容（property copy），创建一块新的内存地址，最后_property = property。
