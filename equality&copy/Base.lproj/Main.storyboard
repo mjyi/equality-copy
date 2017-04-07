@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8k-3k-nOV">
+                                <rect key="frame" x="120" y="80" width="135" height="30"/>
+                                <state key="normal" title="copy&amp;mutableCopy"/>
+                                <connections>
+                                    <action selector="someaboutcopy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fc-0c-JZE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgV-xn-ESJ">
+                                <rect key="frame" x="160" y="220" width="54" height="30"/>
+                                <state key="normal" title="equality"/>
+                                <connections>
+                                    <action selector="equality:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Dc-m2-QfW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dq-fF-I8g">
+                                <rect key="frame" x="139" y="150" width="96" height="30"/>
+                                <state key="normal" title="copy &amp; strong"/>
+                                <connections>
+                                    <action selector="copy_strong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OG5-16-dhQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Dq-fF-I8g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Yl-Kf-Sj5"/>
+                            <constraint firstItem="BgV-xn-ESJ" firstAttribute="top" secondItem="3Dq-fF-I8g" secondAttribute="bottom" constant="40" id="GdE-93-0bg"/>
+                            <constraint firstItem="d8k-3k-nOV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hc5-gO-JRn"/>
+                            <constraint firstItem="BgV-xn-ESJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PKe-Op-ab6"/>
+                            <constraint firstItem="3Dq-fF-I8g" firstAttribute="top" secondItem="d8k-3k-nOV" secondAttribute="bottom" constant="40" id="TJc-Dl-Y09"/>
+                            <constraint firstItem="d8k-3k-nOV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="tvp-Fe-afF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="142.57871064467767"/>
+        </scene>
+    </scenes>
+</document>
